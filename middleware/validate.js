@@ -1,5 +1,3 @@
-// middleware/validate.js
-
 export const validateProduct = (req, res, next) => {
   const { name, price, category, stock } = req.body;
 
