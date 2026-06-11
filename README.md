@@ -55,6 +55,52 @@ A simple REST API built with Node.js and Express.js to manage products and order
 
 ## Sample Request
 
+**POST /api/products**
+```json
+{
+  "name": "Water Bottle",
+  "price": 399,
+  "category": "Sports & Outdoors",
+  "stock": 15
+}
+```
+
+**Response**
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "name": "Water Bottle",
+    "price": 399,
+    "category": "Sports & Outdoors",
+    "stock": 15
+  }
+}
+```
+
+**POST /api/orders**
+```json
+{
+  "customerName": "Ali Raza",
+  "productId": 1,
+  "quantity": 2
+}
+```
+
+**Response**
+```json
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "customerName": "Ali Raza",
+    "productId": 1,
+    "quantity": 2
+  }
+}
+```
+
 POST /api/products
 {
   "name": "Water Bottle",
